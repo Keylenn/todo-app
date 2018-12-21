@@ -1,0 +1,7 @@
+.todo-app {
+  font-family: sans-serif;
+  text-align: center;
+}
+.link__actived{
+  border-bottom: 5px solid #91d5ff;
+}
