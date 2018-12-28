@@ -7,9 +7,14 @@ const NODE_ENV = process.env.NODE_ENV;
 const isProd = NODE_ENV ==="production" ? true : false;
 
 const path = require("path");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const HappyPack = require('happypack');
+const os = require('os');
 
+const happyThreadPool = HappyPack.ThreadPool({ size: os.cpus().length });
 const join = dir => path.join(__dirname, "..", dir);
 
 const getCssLoader = ()=> ({
@@ -58,6 +63,9 @@ const baseConfig = {
     ],
     extensions: [".js", ".jsx", ".json"]
   },
+  externals: {
+    "echarts": "echarts"
+  },
   module: {
     rules:[
       {
@@ -98,10 +106,25 @@ const baseConfig = {
     new MiniCssExtractPlugin({
       filename: isProd ?  'css/[name].[contenthash].css' : 'css/[name].css',
       chunkFileName: isProd ? 'css/[id].[contenthash].css' :'css/[id].css'
+    }),
+    new BundleAnalyzerPlugin({
+      openAnalyzer: false
+    }),
+    new webpack.DllReferencePlugin({
+      manifest: path.resolve(__dirname, '..', 'dist', 'manifest.json')
+    }),
+    new HappyPack({
+      id: 'happyBabel',  //处理哪类文件
+      loaders: [{
+        loader: 'babel-loader?cacheDirectory=true',
+      }],
+      threadPool: happyThreadPool, //共享进程池
+      verbose: true, //允许输出日志
     })
   ]
 }
 
 module.exports = {
-  baseConfig
+  baseConfig,
+  join
 };

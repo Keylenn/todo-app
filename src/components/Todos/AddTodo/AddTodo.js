@@ -1,7 +1,11 @@
 import React,{Component} from "react";
+import { Form, Input, Button } from 'antd';
 import {bindActionCreators} from 'redux';
 import { connect } from 'react-redux';
 import {addTodo} from "../TodosRedux";
+
+
+const { TextArea } = Input;
 
 /*const mapStateToProps = state => ({
   todos: state.todos
@@ -14,43 +18,59 @@ const mapDispatchToProps = dispatch =>{
   return {...boundActionCreators};
 }
 
-
+@Form.create()
+@connect(null, mapDispatchToProps)
 class TodosAddTodo extends Component{
-  constructor(props){
-    super(props);
-    this._refInput = this._refInput.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
 
-  _refInput(node){
-    this.input = node;
-  }
-
-  handleSubmit(e){
+  handleSubmit = e => {
     e.preventDefault();
-    const input = this.input;
-    if(!input.value.trim()){
-      return;
-    }
-    const {addTodo} = this.props;
-    addTodo(input.value);
-    /*if(window.localStorage){
-        console.log(localStorage);
-        let key = localStorage.length + 1
-        localStorage[key] = input.value;
-    }*/
-    input.value='';
+    const {validateFields, setFieldsValue} =this.props.form
+    validateFields((err, fieldsValue) => {
+      if(err){
+        return;
+      }
+      console.log(fieldsValue);
+      const { addTodo } = this.props;
+      const { todo } = fieldsValue;
+      addTodo(todo);
+      setFieldsValue({
+        todo:''
+      })
+    });
   }
 
   render(){
+    const initStyle = {
+      textArea: {
+        width: 400
+      },
+      addButton: {
+        marginTop: '3px',
+      }
+    }
+    const { getFieldDecorator } = this.props.form;
     return(
-      <form onSubmit={ this.handleSubmit }>
-        <input ref={ this._refInput } />
-        <button type="submit">添加</button>
-      </form>
+      <Form layout="inline"  onSubmit={ this.handleSubmit }>
+        <Form.Item>
+          {getFieldDecorator('todo', {
+            rules: [{
+              required: true, message: '待办事项不能为空',
+            }],
+          })(
+            <TextArea placeholder="请输入您的待办事项"
+                      autosize={{ minRows: 1, maxRows: 3 }}
+                      style={initStyle.textArea} />
+          )}
+        </Form.Item>
+        <Button type="primary"
+                icon="plus"
+                style={initStyle.addButton}
+                htmlType="submit">
+          添加
+        </Button>
+      </Form>
     );
   }
 }
 
-
-export default connect(null, mapDispatchToProps)(TodosAddTodo);
+export default TodosAddTodo;

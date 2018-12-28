@@ -2,9 +2,10 @@ import React from 'react';
 import {connect} from "react-redux";
 import { bindActionCreators } from "redux";
 import {toggleTodo} from "../TodosRedux";
+import {List} from "antd";
 
 import TodosListItem from "./ListItem";
-import TodosListCompletion from "./Completion";
+
 
 
 const mapStateToProps = state =>({
@@ -36,25 +37,17 @@ const TodosList = props =>{
     const { todos, filter, toggleTodo } = props;
     const visibledTodos = selectVisibledTodos(todos, filter);
     return(
-        <ul>
-            {
-                visibledTodos.length === 0
-                ?  <p>暂无数据</p>
-                : visibledTodos.map( item => (
-                    <div key={item.id}>
-                        <TodosListItem
-                            text={item.text}
-                            completed={item.completed}
-                            onToggle={ () => toggleTodo(item.id) } />
-                        <TodosListCompletion
-                            completed={item.completed}
-                            id={item.id}/>
-                    </div>
-                ))
-            }
-        </ul>
+      <List
+        dataSource={visibledTodos}
+        renderItem={ item =>  <TodosListItem
+          key = {item.id}
+          id = {item.id}
+          text={item.text}
+          completed={item.completed}
+          completion={item.completion}
+          onToggle={ () => toggleTodo(item.id) } />}
+      />
     );
-
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodosList);

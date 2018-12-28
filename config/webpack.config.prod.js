@@ -3,33 +3,46 @@
 *loader:[]
 * plugins: [optimize-css-assets-webpack-plugin, uglifyjs-webpack-plugin]
 * */
-const  { baseConfig } = require("./webpack.config.base");
+const  { baseConfig, join } = require("./webpack.config.base");
 const merge = require("webpack-merge");
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin'); //优化压缩css
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); //压缩js
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const CompressionPlugin = require("compression-webpack-plugin");
+
 
 const prodConfig = merge(baseConfig, {
   mode: "production",
-  performance: { //webpack 性能提示，当文件大小超过 250kb 时的提示方式
+  performance: {
     hints: 'warning'
   },
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
-        /*
-         * 选项配置参考：https://blog.csdn.net/u013884068/article/details/83511343
-         * https://www.cnblogs.com/tugenhua0707/p/9569762.html
-         * */
         uglifyOptions: {
           compress: {
-            warnings: false, //不输出警告信息
+            warnings: false,
           }
-        },
-        parallel: true //使用多进程并行运行来提高构建速度
+        }
       }),
       new OptimizeCSSAssetsPlugin({})
     ]
-  }
+  },
+  plugins:[
+    new CleanWebpackPlugin(['dist'], {
+      root: join(''),
+      exclude: ['manifest.json', 'vendor.dll.js'],
+      verbose: true,
+      dry:  false
+    }),
+    new CompressionPlugin({
+      filename: '[path].gz[query]',
+      algorithm: 'gzip',
+      test: /\.(js|css)/,
+      threshold: 10 * 1024,
+      minRatio: 0.8
+    })
+  ]
 });
 
 module.exports = prodConfig;

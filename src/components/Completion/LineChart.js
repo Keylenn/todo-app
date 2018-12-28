@@ -12,6 +12,7 @@ const CompletionLineChart = (props)=>{
   let yValue = [];
   const { todos } = props;
   const completedTodos = todos.filter(todo => todo.completed);
+  console.log(completedTodos);
   completedTodos.map(todo => xValue.push(todo.text));
   completedTodos.map(todo => yValue.push(todo.completion));
   return(

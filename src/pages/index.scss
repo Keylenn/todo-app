@@ -1,7 +1,19 @@
+.center{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
 .todoApp{
   font-family: sans-serif;
   text-align: center;
 }
-.actived{
-  border-bottom: 5px solid #91d5ff;
+.container{
+  display: flex;
+}
+.mainContent{
+  composes: center;
+  flex: 1;
+  padding: 5rem;
+  margin-right: 256px;  //sliderMenu的宽度
 }

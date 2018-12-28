@@ -16,12 +16,18 @@ const BasicLineChart = ({xValue, yValue})=>{
       type: 'line'
     }]
   });
+  const inlineStyle = {
+    lineChart: {
+      minWidth: '50rem',
+      minHeight: '25rem'
+    }
+  }
   return (
     <div>
       {
         xValue.length === 0 || yValue.length === 0
         ? <p>暂无数据</p>
-        : <ReactEcharts option={getOption()} />
+        : <ReactEcharts option={getOption()} style={inlineStyle.lineChart}/>
       }
     </div>
   );
