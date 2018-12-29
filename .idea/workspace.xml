@@ -2,30 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3180b05-a2b8-49fb-b5b7-6ed3b7c58cfa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.dll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/todo/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/storage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.prod.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.prod.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Completion/LineChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Completion/LineChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Filter/FilterLink.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/FilterLink.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SliderMenu/SliderMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SliderMenu/SliderMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/List/Completion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/List/Completion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/List/List.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/List/List.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Todos/List/ListItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Todos/List/ListItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UI/BasicLineChart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/BasicLineChart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/todo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/todo/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/dist/" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -101,9 +79,48 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-411339473">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.opened" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="js" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JavaScript" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="js" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JavaScript" value="6" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -131,7 +148,6 @@
         <option value="$PROJECT_DIR$/src/components/Completion/LineChart.js" />
         <option value="$PROJECT_DIR$/src/components/SliderMenu/SliderMenu.js" />
         <option value="$PROJECT_DIR$/src/components/UI/BasicLineChart.js" />
-        <option value="$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js" />
         <option value="$PROJECT_DIR$/src/utils/storage.js" />
         <option value="$PROJECT_DIR$/src/components/Todos/TodosRedux.js" />
         <option value="$PROJECT_DIR$/src/components/Todos/List/List.js" />
@@ -144,6 +160,7 @@
         <option value="$PROJECT_DIR$/config/webpack.config.base.js" />
         <option value="$PROJECT_DIR$/config/webpack.config.dev.js" />
         <option value="$PROJECT_DIR$/src/components/Todos/List/Completion.js" />
+        <option value="$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js" />
       </list>
     </option>
   </component>
@@ -163,7 +180,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-83" />
     <option name="width" value="976" />
     <option name="height" value="860" />
@@ -181,11 +198,6 @@
               <item name="todo-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="todo-app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="todo-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="todo-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -195,12 +207,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../backup_project/project/todo-app" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="D:\keyleen\project\todo-app\node_modules\eslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="D:\keyleen\project\todo-app\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="D:\develop\IDE\WebStorm 2018.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
@@ -240,11 +253,13 @@
       <workItem from="1545789152963" duration="1502000" />
       <workItem from="1545891022421" duration="4611000" />
       <workItem from="1545975739691" duration="1385000" />
+      <workItem from="1545984329744" duration="709000" />
+      <workItem from="1546049709702" duration="596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61169000" />
+    <option name="totallyTimeSpent" value="62474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -259,7 +274,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24968314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14828898" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -273,7 +288,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3167116" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30997303" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -287,25 +302,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/es/NavLink.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-router-dom/es/NavLink.js" />
     <entry file="file://$PROJECT_DIR$/.eslintrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/index.html" />
     <entry file="file://$PROJECT_DIR$/dist/js/1.index.js" />
-    <entry file="file://$PROJECT_DIR$/node_modules/compression-webpack-plugin/dist/cjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/compression-webpack-plugin/dist/cjs.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/home/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -313,20 +316,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/react-redux/es/connect/connect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="97" column="15" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="444" column="16" selection-start-line="444" selection-start-column="16" selection-end-line="444" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-redux/es/connect/connect.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/redux/index.d.ts" />
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -349,13 +340,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/todo/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="1" column="22" lean-forward="true" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/todo/index.scss" />
     <entry file="file://$PROJECT_DIR$/src/pages/todo/Filter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -380,13 +365,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.scss" />
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -394,20 +373,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/echarts-for-react/lib/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js" />
+    <entry file="file://$PROJECT_DIR$/node_modules/echarts-for-react/lib/index.d.ts" />
     <entry file="file://$PROJECT_DIR$/src/pages/completion/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -422,13 +389,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/SliderMenu/SliderMenu.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="30" column="50" lean-forward="true" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/SliderMenu/SliderMenu.js" />
     <entry file="file://$PROJECT_DIR$/src/pages/todo/AddTodo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -436,13 +397,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/utils/storage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/storage.js" />
     <entry file="file://$PROJECT_DIR$/src/components/Todos/TodosRedux.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -477,13 +432,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.js" />
     <entry file="file://$PROJECT_DIR$/dist/js/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -513,9 +462,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="112" column="26" lean-forward="true" selection-start-line="112" selection-start-column="26" selection-end-line="112" selection-end-column="26" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -540,16 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="401">
           <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1167">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -564,6 +500,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="30" column="3" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Todos/AddTodo/AddTodo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

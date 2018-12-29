@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import {addTodo} from "../TodosRedux";
 
 
-const { TextArea } = Input;
-
 /*const mapStateToProps = state => ({
   todos: state.todos
 });*/
@@ -57,8 +55,7 @@ class TodosAddTodo extends Component{
               required: true, message: '待办事项不能为空',
             }],
           })(
-            <TextArea placeholder="请输入您的待办事项"
-                      autosize={{ minRows: 1, maxRows: 3 }}
+            <Input placeholder="请输入您的待办事项"
                       style={initStyle.textArea} />
           )}
         </Form.Item>
