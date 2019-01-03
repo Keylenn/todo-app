@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 import { bindActionCreators } from "redux";
 import {addCompletion} from "../TodosRedux";
 
-import { Form, InputNumber , Button } from 'antd';
+import { Form, Input , Button } from 'antd';
 
 const mapDispatchToProps = dispatch => {
   const boundAcitonCreators = bindActionCreators({
@@ -16,6 +16,7 @@ const mapDispatchToProps = dispatch => {
 @Form.create()
 @connect(null, mapDispatchToProps)
 class TodosListCompletion extends Component {
+
   handleSubmit = e => {
     e.preventDefault();
     const {validateFields} =this.props.form
@@ -38,7 +39,7 @@ class TodosListCompletion extends Component {
       showWithCompleted: {
         display: completed ? 'inline-block' : 'none'
       },
-      inputNumber: {
+      input: {
         width: 100
       },
      addButton: {
@@ -50,16 +51,17 @@ class TodosListCompletion extends Component {
         <Form.Item>
           {getFieldDecorator('completion', {
             initialValue: completion,
-            rules: [{
-              required: true, message: '完成度不能为空',
-            }],
+            rules: [
+              { required: true, message: '完成度不能为空'},
+              { pattern: /^(10|[1-9]){1}$/, message: '请输入1-10' }
+            ],
           })(
-            <InputNumber
-              placeholder="输入1-10"
-              min={1}
-              max={10}
-              style={inilineStyle.inputNumber}
-            />
+
+              <Input
+                placeholder="请输入1-10"
+                autoFocus
+                style={inilineStyle.input}
+              />
           )}
         </Form.Item>
         <Button

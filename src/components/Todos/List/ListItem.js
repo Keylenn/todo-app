@@ -56,7 +56,7 @@ class TodosListItem extends Component {
               onClick={this.showModal}
             >
               {
-                this.state.completion === 0
+                this.state.completion <= 0 || this.state.completion > 10
                   ? (<span>
                       <Icon type="edit"/>
                       完成情况
