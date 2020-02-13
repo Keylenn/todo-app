@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>问题：<span class="ques"></span></p>
+    <input class="answer" type="text" placeholder="请回答上面的问题~">
+    <script src="https://cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+         $(function () {
+            const quesMap = {
+                '小太阳的生日（xx年xx月xx日）': '1996年06月15日',
+                '在一起多少天（数字）': '1553',
+                '纪念日（xx年xx月xx日）': '2015年11月13日',
+                '距离周年还有多少天（数字）': '274',
+                '距离小太阳的生日还有多少天（数字）': '173',
+            }
+            let quesMapFromStorage = JSON.parse( localStorage.getItem('quesMap') );
+            console.log(quesMapFromStorage)
+            if(!quesMapFromStorage) {
+                quesMapFromStorage = quesMap;
+                localStorage.setItem('quesMap', JSON.stringify(quesMap));
+
+            } 
+
+            const quesArr = Object.keys(quesMapFromStorage);
+            const len = quesArr.length;
+            const ques = quesArr[Math.floor( Math.random()*len )]
+            $('.ques').html( ques )
+            $('.answer').blur(()=>{
+                if( $('.answer').val() === quesMapFromStorage[ques] ) {
+                    alert('恭喜你答对了~获得一次抽奖机会')
+                    delete quesMapFromStorage[ques]
+                    console.log(quesMapFromStorage)
+                    localStorage.setItem('quesMap', JSON.stringify( quesMapFromStorage ));
+                    localStorage.setItem('times',  Number( localStorage.getItem('times') ) + 1)
+                } else {
+                    alert('啊哦~答错啦！再想想哦')
+                }
+            })
+            
+            
+            
+         });
+    </script>
+</body>
+</html>
